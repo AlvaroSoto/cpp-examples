@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# Batch and Makefiles
+*.bat
+*.cmd
+*.sh
+*.pl
+*.make
+*.mk
+*.mak
+
