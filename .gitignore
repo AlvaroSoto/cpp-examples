@@ -40,3 +40,5 @@
 *.mk
 *.mak
 
+# exclude files
+analisiscodigo.cpp
