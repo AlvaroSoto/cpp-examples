@@ -6,3 +6,4 @@ examples of the c++ language
 03.- Funciones
 04.- Matrices
 05.- Enumeraciones
+06.- Tipos de datos
