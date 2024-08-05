@@ -9,7 +9,7 @@ int main(void){
     // Asignar valores a las variables
     c = 'A';
     i = 10;
-    f = 3.1416;
+    f = 3.1416F; // La F indica que es un número flotante
     d = 3.14159265358979323846;
     // Visualizar los valores de las variables
     // %c: Caracter, %d: Entero, %f: Flotante, %lf: Doble
