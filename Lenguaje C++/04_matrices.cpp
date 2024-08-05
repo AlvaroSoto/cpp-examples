@@ -8,7 +8,11 @@ int main(void){
     char car = 'A';
     int ent = 0, r = 0;
     double real = 0.0;
+    // char cadena[80];
+    // Inicializar la cadena de caracteres
     char cadena[80] = "Hola";
+    // Matriz de N elementos
+    // float m[10];
     float m[N];
 
     printf("%c", car); printf("\n");
@@ -22,6 +26,7 @@ int main(void){
     printf("La variable \"cadena\" contiene: %s\n", cadena);
 
     printf("Introduce datos para la matriz:\n");
+    // for, variable de control i, inicialización de i, condición de salida, incremento de is
     for (int i = 0; i < N; i++)
     {
         printf("m[%d] = ", i);

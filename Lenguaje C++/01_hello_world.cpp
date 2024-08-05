@@ -6,4 +6,4 @@ int main() {
     return 0;
 }
 
-// Nota
+// Este programa imprime "Hello World!!" en la consola.

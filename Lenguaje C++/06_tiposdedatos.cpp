@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-    // Definir las variables
+    // Inicializar las variables
     char c;
     int i;
     float f;
@@ -12,6 +12,7 @@ int main(void){
     f = 3.1416;
     d = 3.14159265358979323846;
     // Visualizar los valores de las variables
+    // %c: Caracter, %d: Entero, %f: Flotante, %lf: Doble
     printf("El valor de c es: %c\n", c);
     printf("El valor de i es: %d\n", i);
     printf("El valor de f es: %f\n", f);

@@ -10,6 +10,7 @@ double logaritmo(double x){
 }
 
 main(){
+    // Declaración de variables
     int dato1, dato2, resultado;
     dato1 = 20;
     dato2 = 0;
