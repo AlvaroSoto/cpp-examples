@@ -10,7 +10,7 @@ examples of the c++ language
 007.- Numero par o impar
 008.- Multiplos
 009.- Compuestos
-010.- Criterios de divisibilidad
-011.- Numeros primos
-012.- MCD
-013.- MCM
+010.- Numeros primos
+011.- MCD
+012.- MCM
+013.- 
