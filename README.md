@@ -11,6 +11,6 @@ examples of the c++ language
 008.- Multiplos
 009.- Compuestos
 010.- Numeros primos
-011.- MCD
-012.- MCM
-013.- 
+011.- Par o impar
+012.- MCD
+013.- MCM
