@@ -14,4 +14,5 @@ examples of the c++ language
 011.- Par o impar
 012.- MCD
 013.- MCM
-014.-
+014.- Palindromo
+015.-
