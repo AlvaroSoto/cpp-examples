@@ -1,26 +1,26 @@
 #include <iostream>
+//#include <stdio.h> lo comento por uso de cout y cin en sustitucion de printf y scanf
 #include <algorithm>
 using namespace std;
 
-bool esPalindromo(const string& palabra) {
-    string copia = palabra;
-    transform(copia.begin(), copia.end(), copia.begin(), ::tolower); // Convertir a minúsculas
-    reverse(copia.begin(), copia.end());
-    return copia == palabra;
-}
-
 int main() {
+    // con using namespace std; ya no es necesario usar std::cout y std::cin, solo cout y cin
     string palabra;
-    cout << "Ingrese una palabra: ";
-    cin >> palabra;
-
-    if (esPalindromo(palabra)) {
-        cout << "La palabra es un palíndromo." << endl;
-    } else {
-        cout << "La palabra no es un palíndromo." << endl;
+    // count imprime el numero de caracteres que tiene la cadena
+    cout << "Ingrese una frase: ";
+    // cin >> palabra; guarda la cadena ingresada por el usuario en la variable palabra
+    cin >> palabra; 
+    // transform(inicio, fin, inicioDestindsdo, funcion), toupper convierte a mayusculas
+    transform(palabra.begin(), palabra.end(), palabra.begin(), ::toupper);
+    // string(palabra.rbegin(), palabra.rend() crea una nueva cadena a partir de la inversa de palabra
+    // otra opcion es - reverse(palabra.begin(), palabra.end());
+    string palabrainvertida = string(palabra.rbegin(), palabra.rend());
+    // compara si la palabra es igual a su inversa
+    if (palabra == palabrainvertida)
+    {
+        cout << "La frase es un palíndromo." << endl;
     }
-
-    return 0;
+    else {
+        cout << "La frase no es un palíndromo." << endl;
+    }
 }
-
-// Revisa el código y asegúrate de que funciona correctamente para diferentes casos, como palabras con mayúsculas, minúsculas y espacios.
