@@ -1,4 +1,4 @@
-// generar numeros pares e impares hasta un numero dado por el usuario
+// generar números pares e impares hasta un numero dado por el usuario
 #include <stdio.h>
 
 int main() {

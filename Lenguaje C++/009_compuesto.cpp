@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Encontrar los numeros compuestos de un numero
+// Encontrar los números compuestos de un numero
 int main() {
     int num, i, j, compuesto;
     printf("Introduce un número: ");

@@ -10,10 +10,10 @@ int main() {
     cout << "Ingrese una frase: ";
     // cin >> palabra; guarda la cadena ingresada por el usuario en la variable palabra
     cin >> palabra; 
-    // transform(inicio, fin, inicioDestindsdo, funcion), toupper convierte a mayusculas
+    // transform(inicio, fin, inicioDestino, función) convierte todos los caracteres de una cadena a mayúsculas
     transform(palabra.begin(), palabra.end(), palabra.begin(), ::toupper);
     // string(palabra.rbegin(), palabra.rend() crea una nueva cadena a partir de la inversa de palabra
-    // otra opcion es - reverse(palabra.begin(), palabra.end());
+    // otra opción es - reverse(palabra.begin(), palabra.end());
     string palabrainvertida = string(palabra.rbegin(), palabra.rend());
     // compara si la palabra es igual a su inversa
     if (palabra == palabrainvertida)

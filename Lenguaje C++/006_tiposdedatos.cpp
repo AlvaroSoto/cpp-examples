@@ -14,7 +14,7 @@ int main(void){
     d = 3.14159265358979323846;
     ld = 3.14159265358979323846;
     // Visualizar los valores de las variables
-    // %c: Caracter, %d: Entero, %f: Flotante, %lf: Doble
+    // %c: Carácter, %d: Entero, %f: Flotante, %lf: Doble
     printf("El valor de c es: %c\n", c);
     printf("El valor de i es: %d\n", i);
     printf("El valor de f es: %f\n", f);

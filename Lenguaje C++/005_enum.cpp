@@ -24,6 +24,6 @@ int main(void){
     scanf("%d", &color);
     // Visualizar el color
     printf("%d\n", color);
-    // Si el color es verde pasara la siguiente condicion
+    // Si el color es verde pasara la siguiente condición
     if (color == verde) printf("Esmeralda\n");
 }

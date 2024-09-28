@@ -1,4 +1,4 @@
-// maximo común divisor (mcd) de dos números
+// máximo común divisor (mcd) de dos números
 #include <stdio.h>
 
 int main() {

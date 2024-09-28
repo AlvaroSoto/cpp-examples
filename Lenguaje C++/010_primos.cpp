@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-// generar numeros primos hasta un numero dado por el usuario
+// generar números primos hasta un numero dado por el usuario
 int numprimos() {
     int num, i, j, primo;
     printf("Introduce un número para generar los números primos hasta él: ");

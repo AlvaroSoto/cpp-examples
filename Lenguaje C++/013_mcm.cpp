@@ -1,4 +1,4 @@
-//maximo comun multiplo (mcm) de dos numeros
+//máximo común múltiplo (mcm) de dos números
 #include <stdio.h>
 
 int main() {
