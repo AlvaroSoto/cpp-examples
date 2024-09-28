@@ -42,3 +42,6 @@
 
 # exclude files
 analisiscodigo.cpp
+
+# Ignorar carpetas
+/Proyectos/
