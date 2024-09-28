@@ -3,7 +3,10 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe compilar archivo activo",
+            /**
             "command": "C:/mingw64/bin/g++.exe",
+            **/
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -12,7 +15,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "C:/mingw64/bin"
+                "cwd": "C:/msys64/ucrt64/bin"
             },
             "problemMatcher": [
                 "$gcc"

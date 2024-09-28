@@ -10,7 +10,10 @@
                 "UNICODE",
                 "_UNICODE"
             ],
+            /**
             "compilerPath": "C:/mingw64/bin/g++.exe",
+            **/
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
             "intelliSenseMode": "windows-gcc-arm64"
         }
     ],
