@@ -45,3 +45,6 @@ analisiscodigo.cpp
 
 # Ignorar carpetas
 /Proyectos/
+
+# Ignorar carpeta de VSCode
+.vscode/
