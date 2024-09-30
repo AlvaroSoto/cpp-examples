@@ -41,7 +41,7 @@
 *.mak
 
 # exclude files
-analisiscodigo.cpp
+archivo.cpp
 
 # Ignorar carpetas
 /Proyectos/
