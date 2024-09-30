@@ -32,7 +32,7 @@
 *.app
 
 # Batch and Makefiles
-*.bat
+# *.bat
 *.cmd
 *.sh
 *.pl
