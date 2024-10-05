@@ -1,5 +1,6 @@
 // ! revisar código por que falta agregar "mcm" y solicitar el numerador y denominador
 // ! también solicitar si es una fracción mixta
+// ! falta agregar notas para entender el código
 #include <iostream>
 
 using namespace std;
