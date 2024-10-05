@@ -1,5 +1,5 @@
 // ! revisar código por que falta agregar "mcm" y solicitar el numerador y denominador
-// ! también solicitar si es una fracción mixta
+// ! también solicitar si es una fracción mixta, propia o impropia
 // ! falta agregar notas para entender el código
 #include <iostream>
 
