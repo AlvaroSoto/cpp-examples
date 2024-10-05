@@ -4,7 +4,7 @@
 #include <iostream>
 
 using namespace std;
-
+// "struct" es una estructura de datos que nos permite almacenar una colección de variables del mismo tipo bajo un solo nombre
 struct Fraccion {
     int numerador;
     int denominador;
