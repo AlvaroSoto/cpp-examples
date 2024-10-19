@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, i, mcm;
+    int num1, num2, i, mcm=1;
     printf("Introduce dos números para calcular su mínimo común múltiplo: ");
     scanf("%d %d", &num1, &num2);
     for (i = 1; i <= num1 * num2; i++) {

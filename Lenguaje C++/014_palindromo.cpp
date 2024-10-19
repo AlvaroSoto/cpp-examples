@@ -14,13 +14,13 @@ int main() {
     transform(palabra.begin(), palabra.end(), palabra.begin(), ::toupper);
     // string(palabra.rbegin(), palabra.rend() crea una nueva cadena a partir de la inversa de palabra
     // otra opción es - reverse(palabra.begin(), palabra.end());
-    string palabrainvertida = string(palabra.rbegin(), palabra.rend());
+    string palabra_invertida = string(palabra.rbegin(), palabra.rend());
     // compara si la palabra es igual a su inversa
-    if (palabra == palabrainvertida)
+    if (palabra == palabra_invertida)
     {
-        cout << "La frase es un palíndromo." << endl;
+        cout << "La frase es un Palíndromo." << endl;
     }
     else {
-        cout << "La frase no es un palíndromo." << endl;
+        cout << "La frase no es un Palíndromo." << endl;
     }
 }
