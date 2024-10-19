@@ -1,7 +1,7 @@
 // numero primo es aquel que solo es divisible entre 1 y él mismo
 #include <stdio.h>
 
-int numprimos();
+int prime_numbers();
 
 int main() {
     int num, i, primo = 1;
@@ -18,12 +18,12 @@ int main() {
     } else {
         printf("%d no es un número primo\n", num);
     }
-    numprimos();
+    prime_numbers();
     return 0;
 }
 
 // generar números primos hasta un numero dado por el usuario
-int numprimos() {
+int prime_numbers() {
     int num, i, j, primo;
     printf("Introduce un número para generar los números primos hasta él: ");
     scanf("%d", &num);

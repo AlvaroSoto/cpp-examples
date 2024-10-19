@@ -3,25 +3,25 @@
 
 // Función para calcular el logaritmo
 double logaritmo(double x){
-    double resultado;
+    double res;
     // Código para calcular el logaritmo
-    resultado = log10(x);
-    return resultado;
+    res = log10(x);
+    return res;
 }
 
-main(){
+int main() {
     // Declaración de variables
-    int dato1, dato2, resultado;
-    dato1 = 20;
-    dato2 = 0;
+    double dat1, dat2, res;
+    dat1 = 20.0;
+    dat2 = 0.0;
 
     // Condición para que el número sea diferente de 0 y limpiar el buffer de entrada
-    while (dato2 == 0)
+    while (dat2 == 0)
     {
         // Pedir un número al usuario
         printf("Introduce un número: ");
-        scanf("%d", &dato2);
-        if (dato2 == 0)
+        scanf("%lf", &dat2);
+        if (dat2 == 0)
         {
             printf("El número debe ser diferente de 0\n");
         }
@@ -29,21 +29,21 @@ main(){
     }
     
     // Suma
-    resultado = dato1 + dato2;
-    printf("La suma de %d + %d es: %d\n", dato1, dato2, resultado);
+    res = dat1 + dat2;
+    printf("La suma de %.2f + %.2f es: %.2f\n", dat1, dat2, res);
 
     // Resta
-    resultado = dato1 - dato2;
-    printf("La resta de %d - %d es: %d\n", dato1, dato2, resultado);
+    res = dat1 - dat2;
+    printf("La resta de %.2f - %.2f es: %.2f\n", dat1, dat2, res);
 
     // Multiplicación
-    resultado = dato1 * dato2;
-    printf("La multiplicación de %d * %d es: %d\n", dato1, dato2, resultado);
+    res = dat1 * dat2;
+    printf("La multiplicación de %.2f * %.2f es: %.2f\n", dat1, dat2, res);
 
     // División
-    resultado = dato1 / dato2;
-    printf("La división de %d / %d es: %d\n", dato1, dato2, resultado);
+    res = dat1 / dat2;
+    printf("La división de %.2f / %.2f es: %.2f\n", dat1, dat2, res);
 
     // Logaritmo
-    printf("El logaritmo de %d es: %lf\n", dato2, logaritmo(dato2));
+    printf("El logaritmo de %.2f es: %.2lf\n", dat2, logaritmo(dat2));
 }

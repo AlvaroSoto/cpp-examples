@@ -19,35 +19,35 @@ int mcm(int a, int b)
 }
 
 // "struct" es una estructura de datos que nos permite almacenar una colección de variables del mismo tipo bajo un solo nombre
-struct Fraccion
+struct Fraction
 {
     int numerador;
     int denominador;
     
 };
 //! REVISAR LAS FUNCIONES PORQUE NO DAN EL RESULTADO ESPERADO
-Fraccion sumarFracciones(Fraccion f1, Fraccion f2)
+Fraction sumarFracciones(Fraction f1, Fraction f2)
 {
-    int denominadorComun = f1.denominador * f2.denominador;
+    int denominadorCom = f1.denominador * f2.denominador;
     int numeradorResultante = f1.numerador * f2.denominador + f2.numerador * f1.denominador;
-    return Fraccion{numeradorResultante, denominadorComun};
+    return Fraction{numeradorResultante, denominadorCom};
 }
 
-Fraccion restarFracciones(Fraccion f1, Fraccion f2)
+Fraction restarFracciones(Fraction f1, Fraction f2)
 {
-    int denominadorComun = f1.denominador * f2.denominador;
+    int denominadorCom = f1.denominador * f2.denominador;
     int numeradorResultante = f1.numerador * f2.denominador - f2.numerador * f1.denominador;
-    return Fraccion{numeradorResultante, denominadorComun};
+    return Fraction{numeradorResultante, denominadorCom};
 }
 /*
-Fraccion multiplicarFracciones(Fraccion f1, Fraccion f2)
+Fraction multiplicarFracciones(Fraction f1, Fraction f2)
 {
-    return Fraccion{f1.numerador * f2.numerador, f1.denominador * f2.denominador};
+    return Fraction{f1.numerador * f2.numerador, f1.denominador * f2.denominador};
 }
 
-Fraccion dividirFracciones(Fraccion f1, Fraccion f2)
+Fraction dividirFracciones(Fraction f1, Fraction f2)
 {
-    return Fraccion{f1.numerador * f2.denominador, f1.denominador * f2.numerador};
+    return Fraction{f1.numerador * f2.denominador, f1.denominador * f2.numerador};
 }
 */
 
@@ -81,18 +81,18 @@ int main()
     // Convertir en numero entero la función mcm
     int enteroMCM = mcm(EntDenUno, EntDenDos);
 
-    //Fraccion f1 = {FracPpUno, enteroMCM}; // 1/2
-    //Fraccion f2 = {FracPpDos, enteroMCM}; // 1/3
+    //Fraction f1 = {FracPpUno, enteroMCM}; // 1/2
+    //Fraction f2 = {FracPpDos, enteroMCM}; // 1/3
 
-    Fraccion f1 = {4, 3}; // 1/2
-    Fraccion f2 = {11, 6}; // 1/3
+    Fraction f1 = {4, 3}; // 1/2
+    Fraction f2 = {11, 6}; // 1/3
 
-    Fraccion suma = sumarFracciones(f1, f2);
+    Fraction suma = sumarFracciones(f1, f2);
     cout << "Se convierte la fracción mixta en fracción común" << endl;
     cout << "La suma es: " << FracPpUno << "/" << enteroMCM << "+" << FracPpDos << "/" << enteroMCM << "=";
     cout << suma.numerador << "/" << suma.denominador << endl;
 
-    Fraccion resta = restarFracciones(f1, f2);
+    Fraction resta = restarFracciones(f1, f2);
     cout << "La resta es: " << FracPpUno << "/" << enteroMCM << "-" << FracPpDos << "/" << enteroMCM << "=";
     cout << resta.numerador << "/" << resta.denominador << endl;
 

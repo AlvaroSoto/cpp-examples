@@ -3,6 +3,7 @@
 
 #define N 10 // Tamaño de la matriz
 
+// void = no recibe parámetros y no retorna nada
 int main(void){
     setlocale(0, "spanish");
     char car = 'A';
@@ -26,7 +27,7 @@ int main(void){
     printf("La variable \"cadena\" contiene: %s\n", cadena);
 
     printf("Introduce datos para la matriz:\n");
-    // for, variable de control i, inicialización de i, condición de salida, incremento de is
+    // for, variable de control i, inicializan i, condición de salida, incremento de is
     for (int i = 0; i < N; i++)
     {
         printf("m[%d] = ", i);
