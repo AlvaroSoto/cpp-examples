@@ -14,5 +14,7 @@ examples of the c++ language
 012.- MCD  
 013.- MCM  
 014.- Palíndromo  
-015.- Fracciones
-016.-
+015.- Fracciones  
+016.- Pipe "Envió de mensaje"  
+017.- Pipe "Recepción de mensaje"  
+018.- 

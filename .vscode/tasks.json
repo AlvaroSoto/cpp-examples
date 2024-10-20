@@ -1,33 +1,46 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",  // Define que esta tarea es para construir (compilar) un proyecto C/C++.
-            "label": "C/C++: g++.exe compilar archivo",  // Etiqueta que identifica esta tarea, puede ser usada para referenciarla en launch.json.
-            
-            // Comando a ejecutar. En este caso, el compilador g++ ubicado en la ruta especificada.
+            "type": "cppbuild",
+            "label": "Run C/C++: g++.exe",
             "command": "C:\\mingw64\\bin\\g++.exe",
-            
-            "args": [  // Argumentos pasados al compilador g++.
-                "-fdiagnostics-color=always",  // Habilita la coloración de las advertencias y errores en la salida de la compilación.
-                "-g3",  // Genera información de depuración en el nivel más detallado.
-                "-Wall",  // Habilita todas las advertencias. Es útil para identificar posibles problemas en el código.
-                "${file}",  // El archivo actualmente abierto en el editor se compilará (usa la variable ${file}).
-                "-o",  // Especifica la salida del archivo compilado.
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"  // Crea el ejecutable con el mismo nombre que el archivo fuente, sin la extensión .cpp.
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g3",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}\\execute\\${fileBasenameNoExtension}.exe"
             ],
-            
             "options": {
-                "cwd": "${fileDirname}"  // El directorio de trabajo de la tarea será el mismo en el que se encuentra el archivo fuente.
+                "cwd": "${fileDirname}"
             },
-            
-            "problemMatcher": [
-                "$gcc"  // Define el "problemMatcher" para reconocer errores y advertencias en el formato estándar de g++.
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compilador: C:\\mingw64\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build and debug active file",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g3",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}\\execute\\${fileBasenameNoExtension}.exe"
             ],
-            
-            "group": "build",  // Coloca esta tarea en el grupo "build", lo que significa que es una tarea de compilación.
-            
-            "detail": "compilador: C:\\mingw64\\bin\\g++.exe"  // Detalle adicional que proporciona información sobre el compilador que se está usando.
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+            "detail": "Compilador: C:\\mingw64\\bin\\g++.exe"
         }
     ],
-    "version": "2.0.0"  // La versión del esquema de tareas que se está utilizando en Visual Studio Code.
+    "version": "2.0.0"
 }

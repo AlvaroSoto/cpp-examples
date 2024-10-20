@@ -11,7 +11,7 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",  // Ejecutable generado por g++
             "args": [],  // Argumentos del programa, si los tienes
             "stopAtEntry": false,  // No detener en la entrada, puedes cambiar a true si quieres detener al inicio
-            "cwd": "${workspaceFolder}",  // Establece el directorio de trabajo en la carpeta del proyecto
+            "cwd": "${fileDirname}", // Establece el directorio de trabajo en la carpeta del proyecto
             "environment": [],  // Variables de entorno, si es necesario
             "externalConsole": false,  // Si deseas usar la consola integrada de VS Code, cámbialo a true si prefieres la consola externa
             "MIMode": "gdb",  // Modo de interfaz de depuración, especificado para usar gdb
@@ -23,7 +23,7 @@
                     "ignoreFailures": true  // Ignorar fallos si ocurre un problema al ejecutar el comando
                 }
             ],
-            "preLaunchTask": "C/C++: g++.exe compilar archivo",  // Tarea que compila el archivo antes de ejecutar el programa
+            "preLaunchTask": "C/C++: g++.exe build and debug active file",  // Tarea que compila el archivo antes de ejecutar el programa
             "internalConsoleOptions": "neverOpen"  // No abrir la consola integrada, usa la externa para ver la salida
         }
     ]
