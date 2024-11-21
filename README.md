@@ -18,4 +18,6 @@ examples of the c++ language
 016.- Pipe "Envió de mensaje"  
 017.- Pipe "Recepción de mensaje"  
 018.- Números Imaginarios  
-019.- 
+019.- Literales  
+020.- 
+021.- 
