@@ -19,5 +19,7 @@ examples of the c++ language
 017.- Pipe "Recepción de mensaje"  
 018.- Números Imaginarios  
 019.- Literales  
-020.- 
+020.- Operadores  
 021.- 
+022.-
+023.- 
