@@ -9,18 +9,18 @@
 // primera constante tiene el valor 0, la segunda 1, y así sucesivamente. Sin embargo, se
 // pueden asignar valores específicos a las constantes. Por ejemplo:
 enum colores {
-    azul,
-    amarillo,
-    rojo,
-    verde,
-    blanco,
-    negro
+    azul = 0,
+    amarillo = 1,
+    rojo = 2,
+    verde = 3,
+    blanco = 4,
+    negro = 5
 };
 
 int main(void){
     enum colores color;
     // Leer un color
-    printf("Color: ");
+    printf("Numero del Color: ");
     scanf("%d", &color);
     // Visualizar el color
     printf("%d\n", color);
