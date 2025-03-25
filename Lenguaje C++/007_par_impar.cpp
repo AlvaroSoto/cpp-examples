@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Analiza si un numero es par o impar
 int main() {
     int num;
     printf("Introduce un número: ");
