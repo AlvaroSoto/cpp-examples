@@ -2,7 +2,7 @@
 
 // Encontrar los números compuestos de un numero
 int main() {
-    int num, i, j, compuesto;
+    int num, i;
     printf("Introduce un número: ");
     scanf("%d", &num);
     printf("%d es número compuesto,\n", num);
