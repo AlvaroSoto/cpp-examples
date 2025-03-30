@@ -1,6 +1,4 @@
-// ? revisar código por que falta agregar "mcm" y solicitar el numerador y denominador
-// ! también solicitar si es una fracción mixta, propia o impropia
-// ! falta agregar notas para entender el código
+// Realiza operación de suma y resta de fracciones con mcm y simplificación de fracciones
 #include <iostream>
 
 using namespace std;
@@ -25,7 +23,7 @@ struct Fraction
     int denominador;
     
 };
-//! REVISAR LAS FUNCIONES PORQUE NO DAN EL RESULTADO ESPERADO
+// Función para sumar fracciones
 Fraction sumarFracciones(Fraction f1, Fraction f2)
 {
     int denominadorCom = f1.denominador * f2.denominador;
@@ -39,23 +37,12 @@ Fraction restarFracciones(Fraction f1, Fraction f2)
     int numeradorResultante = f1.numerador * f2.denominador - f2.numerador * f1.denominador;
     return Fraction{numeradorResultante, denominadorCom};
 }
-/*
-Fraction multiplicarFracciones(Fraction f1, Fraction f2)
-{
-    return Fraction{f1.numerador * f2.numerador, f1.denominador * f2.denominador};
-}
-
-Fraction dividirFracciones(Fraction f1, Fraction f2)
-{
-    return Fraction{f1.numerador * f2.denominador, f1.denominador * f2.numerador};
-}
-*/
 
 int main()
 {
     // Variables
-    int EntUno, EntDos;
-    int EntNumUno, EntDenUno, EntNumDos, EntDenDos;
+    int EntUno, EntDos = 0;
+    int EntNumUno, EntDenUno, EntNumDos, EntDenDos = 0;
 
     // Pregunta para entrar en el menú de fracciones
     cout << "Cual es el primer entero?" << endl;
@@ -71,29 +58,25 @@ int main()
     cout << "Cual es el segundo denominador?" << endl;
     cin >> EntDenDos;
 
-    // ! REVISAR SI SE ESTA REALIZANDO BIEN LA OPERACIÓN
-    // Convertir a fracciones propias con EntUno, EntNumUno, EntDenUno
-    int FracPpUno = EntDenUno * EntUno + EntNumUno;
-    int FracPpDos = EntDenDos * EntDos + EntNumDos;
+    // Convertir de mixta a común
+    EntNumUno = EntUno * EntDenUno + EntNumUno;
+    EntNumDos = EntDos * EntDenDos + EntNumDos;
 
     cout << "El mcm de " << EntDenUno << " y " << EntDenDos << " es: " << mcm(EntDenUno, EntDenDos) << endl;
 
     // Convertir en numero entero la función mcm
     int enteroMCM = mcm(EntDenUno, EntDenDos);
 
-    //Fraction f1 = {FracPpUno, enteroMCM}; // 1/2
-    //Fraction f2 = {FracPpDos, enteroMCM}; // 1/3
-
-    Fraction f1 = {4, 3}; // 1/2
-    Fraction f2 = {11, 6}; // 1/3
+    Fraction f1 = {EntNumUno, EntDenUno}; // 1/2
+    Fraction f2 = {EntNumDos, EntDenDos}; // 1/3
 
     Fraction suma = sumarFracciones(f1, f2);
     cout << "Se convierte la fracción mixta en fracción común" << endl;
-    cout << "La suma es: " << FracPpUno << "/" << enteroMCM << "+" << FracPpDos << "/" << enteroMCM << "=";
+    cout << "La suma es: " << EntNumUno << "/" << enteroMCM << "+" << EntNumDos << "/" << enteroMCM << "=";
     cout << suma.numerador << "/" << suma.denominador << endl;
 
     Fraction resta = restarFracciones(f1, f2);
-    cout << "La resta es: " << FracPpUno << "/" << enteroMCM << "-" << FracPpDos << "/" << enteroMCM << "=";
+    cout << "La resta es: " << EntNumUno << "/" << enteroMCM << "-" << EntNumDos << "/" << enteroMCM << "=";
     cout << resta.numerador << "/" << resta.denominador << endl;
 
     return 0;
