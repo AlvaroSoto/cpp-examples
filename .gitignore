@@ -46,3 +46,4 @@ archivo.cpp
 # Ignorar carpetas
 /Proyectos/
 /Lenguaje C++/execute/
+.vscode/
